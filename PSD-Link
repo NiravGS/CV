@@ -1,0 +1,12 @@
+https://www.dropbox.com/s/y43xbamo0n9mcem/Index%20-%20Phase%201-A.zip?dl=0
+
+
+  <script>
+        $(document).ready(function () {
+            if ($('.mtsnb-shown')) {
+                $("#main-header").css("top", "50px");
+            } else {
+                $("#main-header").css("top", "0");
+            }
+        });
+    </script>
