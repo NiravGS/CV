@@ -5,7 +5,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.0/css/froala_editor.pkgd.min.css"
+        rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.0/css/froala_style.min.css" rel="stylesheet"
+        type="text/css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- Fonts -->
@@ -122,7 +128,7 @@
                         <small>Enter One Product Keyword Only. e.g "Mountain Bike"</small>
                     </div>
                 </div>
-                <div class="row mt-3">
+                <div class="row mt-3 div_set_mobile">
                     <div class="title-up">
                         <div class="needed-info">*</div>
                         <div class="inner-tittle">More Keyword:</div>
@@ -134,7 +140,7 @@
                             <div class="col">
                                 <input type="text" class="form-control">
                             </div>
-                            <div class="col">
+                            <div class="col pad_top">
                                 <input type="text" class="form-control">
                             </div>
                         </div>
@@ -163,11 +169,11 @@
                         <ul>
                             <li>
                                 <input type="radio">
-                                <label for="male">Single photo</label>
+                                <label for="male" class="font_set">Single photo</label>
                             </li>
                             <li>
                                 <input type="radio">
-                                <label for="male">Single photo</label>
+                                <label for="male" class="font_set">Single photo</label>
                             </li>
                         </ul>
                         <div class="profile-upload-img">
@@ -317,7 +323,7 @@
                 </div>
                 <div class="row mt-3">
                     <div class="title-up">
-                        <div class="inner-tittle">  Output Frequency:</div>
+                        <div class="inner-tittle"> Output Frequency:</div>
                     </div>
                     <div class="extra-div"></div>
                     <div class="title-input">
@@ -332,7 +338,7 @@
                 </div>
                 <div class="row mt-3">
                     <div class="title-up">
-                        <div class="inner-tittle">  Output Frequency:</div>
+                        <div class="inner-tittle"> Output Frequency:</div>
                     </div>
                     <div class="extra-div"></div>
                     <div class="title-input">
@@ -349,6 +355,21 @@
         </div>
     </section>
     <section>
+        <section class="form_wrapper last-section">
+            <div class="container">
+                <form class="from_wrapper_help">
+                    <div class="linkCatlog">
+                        <h4><span style="color: #f58434;">Detailed </span> Description</h4>
+                        <span>
+                            <p>For the best visual effects, we recommend keeping the image within
+                                750px(width)*800px(height) and table width within
+                                750px.</p>
+                        </span>
+                    </div>
+                    <textarea id="froala-editor">Initialize the Froala WYSIWYG HTML Editor on a textarea.</textarea>
+                </form>
+            </div>
+        </section>
         <footer>
         </footer>
         <div class="border-top">
@@ -367,6 +388,8 @@
             </div>
         </div>
     </section>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
@@ -376,6 +399,18 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+    </script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.0//js/froala_editor.pkgd.min.js"></script>
+    <script>
+        $(function () {
+            $('textarea#froala-editor').froalaEditor()
+        });
     </script>
 </body>
 
